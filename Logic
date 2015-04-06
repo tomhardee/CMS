@@ -1,0 +1,13 @@
+Requirements
+Determine file types based on a library file
+Have different CSS of how it will display the different types of content
+Store content location and description in SQL table
+Integrate into SQL server to pull content data
+Integrate into a login system
+Encrypted passwords based on MD5
+Pull youtube videos down and display on website using link
+Basic chatroom functionality tying into skype, twitter, IRC, etc.
+Personal user pages
+
+
+Process
