@@ -4,10 +4,62 @@ Have different CSS of how it will display the different types of content
 Store content location and description in SQL table
 Integrate into SQL server to pull content data
 Integrate into a login system
-Encrypted passwords based on MD5
+Encrypted passwords based on AES
 Pull youtube videos down and display on website using link
 Basic chatroom functionality tying into skype, twitter, IRC, etc.
 Personal user pages
-
+Blog/Updates page
+Post commenting system
 
 Process
+
+----
+Determine file types based on a library file
+Personal user pages
+Blog/Updates page
+Post commenting system
+
+$myFile = "data.txt";
+$lines = file($myFile);//file in to an array
+var_dump($lines);
+
+unset($lines[0]);
+unset($lines[1]); // we do not need these lines.
+
+foreach($lines as $line) 
+{
+    $var = explode(':', $line, 2);
+    $arr[$var[0]] = $var[1];
+}
+
+print_r($arr);
+
+----
+
+----
+Have different CSS of how it will display the different types of content
+
+If content type = text then print <code for stylesheet>
+Else If ...
+
+----
+
+----
+Pull youtube videos down and display on website using link
+
+<object width="425" height="350" data="http://www.youtube.com/v/Ahg6qcgoay4" type="application/x-shockwave-flash"><param name="src" value="http://www.youtube.com/v/Ahg6qcgoay4" /></object>
+Strip URL for content tag
+----
+
+----
+Encrypted passwords based on AES
+
+https://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html
+
+----
+
+----
+Integrate into a login system
+
+
+----
